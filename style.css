@@ -412,7 +412,8 @@ background-color: skyblue;
     background-color: #e6e6e6;
     border-radius: 1rem;
     text-transform: capitalize;
-    flex: 1;
+    flex-shrink: 0;
+    flex-basis: 15rem;
     text-align: center;
 }
 .main-nav-link:hover{
