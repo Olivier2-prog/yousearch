@@ -18,6 +18,8 @@ video,
 img{
     display: inline-block; 
     width: 100%; 
+    border: none;
+    outline: none;
   }
 video{
     border-radius: 1rem;
@@ -185,11 +187,18 @@ background-color: #b3b3b3;
     display: block!important;
  }
 .logo{
-        width: 4.8rem;
-        height: 4.8rem;  
+       font-size: 4.8rem;  
         margin-left: 2.4rem; 
         cursor: pointer;
+        letter-spacing: -0.4rem;
+        word-spacing:-1.2rem ;
 }
+.logo span{
+    margin-left: -1.3rem;
+    color: red;
+    
+}
+
 .form{
     display: flex;
     align-items: center;
