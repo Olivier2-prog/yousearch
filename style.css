@@ -14,6 +14,14 @@ a{
     display: inline-block;
     text-decoration: none;
 }
+video,
+img{
+    display: inline-block; 
+    width: 100%; 
+  }
+video{
+    border-radius: 1rem;
+}
 ul{
     list-style: none;
 }
@@ -30,6 +38,19 @@ ul{
     align-items: center;
     justify-content: flex-start;
     gap: 1.2rem;
+}
+.space-between{
+    justify-content: space-between;
+}
+.mt-2{
+    margin-top: 3.6rem; 
+}
+.grid-row{
+    display: grid;
+    gap: 3.6rem;
+}
+.col-4{
+    grid-template-columns: repeat(4,1fr);
 }
 /* UTILITY CLASS END */
 
@@ -50,6 +71,7 @@ ul{
     display: inline-block;
     font-size: 3.2rem;
     color: #666666;
+    cursor: pointer;
 
  }
  .fa-search,
@@ -166,6 +188,7 @@ background-color: #b3b3b3;
         width: 4.8rem;
         height: 4.8rem;  
         margin-left: 2.4rem; 
+        cursor: pointer;
 }
 .form{
     display: flex;
@@ -307,7 +330,7 @@ border-radius: 1rem;
 .fa-thumbs-up{
     display: inline-block;
     font-size: 3.6rem;
-    color: #b5b0b0;
+    color: #222;
 }
 .fa-angle-right{
     display: inline-block;
@@ -365,6 +388,7 @@ background-color: skyblue;
 /* SIDEBAR END */
 .main-content{
  padding: 4.8rem;
+ overflow: scroll;
 }
 .main-nav{
     padding: 1.6rem;
@@ -396,4 +420,26 @@ background-color: skyblue;
     font-size: 3.6rem;
     right: -0.4rem;
     opacity: 0.5;
+}
+.uploaded-video-card{
+  display: block;
+  padding: 1.8rem;
+  box-shadow: 0 0 1.2rem gray;
+}
+.upload-detail{
+    margin-top: 2.4rem;
+    position: relative;
+}
+.video-detail{
+    color: #333;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.fa-ellipsis-v{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #555;
+
+
 }
