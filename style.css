@@ -22,7 +22,7 @@ a{
 
 /* NAVIGATION START */
 .nav-bar{
-    padding: 3.2rem;
+    padding:1.6rem 3.2rem;
     grid-column: 1/-1;
     height: fit-content;
     display: flex;
@@ -35,15 +35,17 @@ a{
 }
 .fa-bars{
     display: inline-block;
-    font-size: 4.8rem;
+    font-size: 3.2rem;
     color: #666666;
 
  }
- .fa-search,.fa-microphone{
+ .fa-search,
+ .fa-microphone{
     display: inline-block;
     font-size: 2.4rem;
  }
- .fa-microphone{
+ .fa-microphone,
+ .fa-video,.fa-bell{
     display: block;
     padding: 1.8rem;
 border-radius: 50%;
@@ -55,8 +57,14 @@ display: flex;
     justify-content: center;
     position: relative;
 
+
  }
- .fa-microphone:hover{
+ .fa-video,.fa-bell{
+    background-color: transparent;
+    position: relative;
+ }
+ .fa-microphone:hover, 
+ .fa-video:hover,.fa-bell:hover{
 background-color: #b3b3b3;
  }
  .fa-microphone::after{
@@ -76,6 +84,67 @@ background-color: #b3b3b3;
     left: 50%;
     transform: translateX(-50%);
     text-transform: capitalize!important;
+ }
+ .fa-video::after{
+    content: "Create";
+    background-color: #333333d2;
+    color: #e6e6e6;
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: -3.1rem;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    text-transform: capitalize;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize!important;
+ }
+ .fa-bell::after{
+    content: "Notification";
+    background-color: #333333d2;
+    color: #e6e6e6;
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: -3.1rem;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    text-transform: capitalize;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize!important;
+ }
+ .profile::after{
+    content: "Notification";
+    background-color: #333333d2;
+    color: #e6e6e6;
+    font-size: 1rem;
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    bottom: -3.1rem;
+    font-weight: 600;
+    display: block;
+    width: fit-content;
+    text-transform: capitalize;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize!important;
+ }
+ 
+ .fa-microphone:hover::after,
+ .fa-video:hover::after,
+ .fa-bell:hover::after,
+ .profile:hover::after{
+    display: block!important;
  }
  .fa-microphone:hover::after{
     display: block!important;
@@ -141,17 +210,40 @@ cursor: pointer;
 .search-btn .fa-search{
     color: #666666;
 }
-
+.profile-notification-upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.profile-notification-upload a{
+   color:#666666;
+   font-size: 2.4rem;
+   display: inline-block;
+}
+/* .profile{
+    padding: 1rem;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    
+} */
+.profile-img{
+    padding: 0.5rem;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    width: 6.2rem;
+    height: 6.2rem;
+    
+}
 /* NAVIGATION END */
 
 /* SIDEBAR START */
 .side-bar{
-    background-color: coral;
-    height: calc(100vh - 11.44rem);
+    height: calc(100vh - 9.44rem);
 
 }
 
 /* SIDEBAR END */
 .main-content{
-    background-color: magenta;
+ 
 }
