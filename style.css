@@ -413,7 +413,8 @@ background-color: skyblue;
     border-radius: 1rem;
     text-transform: capitalize;
     flex-shrink: 0;
-    flex-basis: 15rem;
+    flex-grow: 1;
+    flex-basis: auto;
     text-align: center;
 }
 .main-nav-link:hover{
